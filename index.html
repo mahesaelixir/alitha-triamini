@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="robots" content="noindex, nofollow" />
+
+    <title>Alitha Triamini</title>
+
+    <link rel="icon" type="image/png" href="/img/cheesecake.jpg" />
+
+    <!-- FONT -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="triamini.css" />
+  </head>
+
+  <body>
+    <!-- BACKGROUND -->
+
+    <div class="bg-blur bg-1"></div>
+    <div class="bg-blur bg-2"></div>
+
+    <!-- HERO -->
+
+    <section class="hero">
+      <div class="hero-card">
+        <div class="avatar-wrapper" id="avatarToggle">
+          <img
+            src="/img/Screenshot 2026-05-26 220601.png"
+            alt="cat avatar"
+            class="avatar-image"
+            id="avatarImage"
+          />
+        </div>
+
+        <div class="badge">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="1.8"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9.813 15.904 9 18l-1.813-2.096a5.5 5.5 0 1 1 2.626 0Z"
+            />
+          </svg>
+
+          Summer of The Cigadung Village
+        </div>
+
+        <h1 class="hero-name">
+          Alitha
+          <br />
+          Triamini
+        </h1>
+
+        <p class="hero-subtitle">
+          Ciptaan Tuhan yang sedang berbahagia, suatu ilham dan titipan semesta
+          yang amat dahayu. Matanya bercahaya layaknya binar nirmala, serupa
+          senja yang membuat dunia seakan mengambil jeda, agar aku bisa diam
+          lebih lama dan fokus menatapnya tanpa ingin berpaling.
+        </p>
+
+        <div class="button-group">
+          <button class="btn-primary" onclick="openPopup()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="1.8"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m4 4 16 8-16 8 4-8-4-8Z"
+              />
+            </svg>
+
+            ❔
+          </button>
+
+          <button class="btn-secondary" onclick="flowerFrame()">
+            🌼FLOWAA!
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+
+    <section class="about">
+      <div class="about-card">
+        <h2 class="section-title">About Alitha</h2>
+
+        <div class="about-grid">
+          <div class="about-item">
+            <div class="about-icon">✿</div>
+
+            <h3>Keindahan Paripurna</h3>
+
+            <p>
+              Parasmu memancarkan semburat pesona, seindah langit dengan
+              aurora-nya yang tak pernah membosankan untuk dipandang.
+            </p>
+          </div>
+
+          <div class="about-item">
+            <div class="about-icon">☁</div>
+
+            <h3>"Fallen Angel"</h3>
+
+            <p>
+              Makna hakiki dari sebuah nama, setelah sekian lama langit hanya
+              dipenuhi tanda tanya, tak heran bila hadirmu begitu mempesona.
+              Terima kasih sudah berhenti dan menetap, di dunia yang fana.
+            </p>
+          </div>
+
+          <div class="about-item">
+            <div class="about-icon">♡</div>
+
+            <h3>Keajaiban Semesta</h3>
+
+            <p>
+              Jawaban dari semua doa leluhur terkasih, kehadirannya hadir
+              seperti arunika yang terang hingga cakrawala.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAROUSEL -->
+
+    <div class="cat-carousel">
+      <button class="carousel-btn prev" onclick="moveSlide(-1)">
+        &#10094;
+      </button>
+
+      <div class="carousel-track" id="carouselTrack">
+        <div class="cat-slide">
+          <img
+            src="/img/WhatsApp Image 2026-05-26 at 01.07.24.jpeg"
+            alt="cat 1"
+          />
+        </div>
+
+        <div class="cat-slide">
+          <img
+            src="/img/WhatsApp Image 2026-05-26 at 01.07.42.jpeg"
+            alt="cat 2"
+          />
+        </div>
+
+        <div class="cat-slide">
+          <img
+            src="/img/WhatsApp Image 2026-05-26 at 01.07.43.jpeg"
+            alt="cat 3"
+          />
+        </div>
+
+        <div class="cat-slide">
+          <img
+            src="/img/WhatsApp Image 2026-05-26 at 01.07.44.jpeg"
+            alt="cat 4"
+          />
+        </div>
+
+        <div class="cat-slide">
+          <img
+            src="/img/WhatsApp Image 2026-05-26 at 01.07.47.jpeg"
+            alt="cat 5"
+          />
+        </div>
+      </div>
+
+      <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <!-- SPOTIFY -->
+
+    <section class="spotify-section">
+      <h2 class="spotify-title">jelitha's songs</h2>
+
+      <div class="spotify-grid">
+        <!-- CARD 1 -->
+
+        <div class="spotify-card" onclick="playSong(0)">
+          <div class="vinyl-wrap">
+            <img
+              src="/albumcard/I Can’t Help Falling In Love With You.jfif"
+              class="album-cover"
+            />
+
+            <div class="vinyl"></div>
+          </div>
+
+          <div class="spotify-info">
+            <h3>Can't Help Falling In Love</h3>
+
+            <p>Elvis Presley</p>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+
+        <div class="spotify-card" onclick="playSong(1)">
+          <div class="vinyl-wrap">
+            <img src="/albumcard/Paul Anka.jfif" class="album-cover" />
+
+            <div class="vinyl"></div>
+          </div>
+
+          <div class="spotify-info">
+            <h3>Put Your Head On My Shoulder</h3>
+
+            <p>Paul Anka</p>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+
+        <div class="spotify-card" onclick="playSong(2)">
+          <div class="vinyl-wrap">
+            <img src="/albumcard/Shape of My Heart.jfif" class="album-cover" />
+
+            <div class="vinyl"></div>
+          </div>
+
+          <div class="spotify-info">
+            <h3>Shape of My Heart</h3>
+
+            <p>Backstreet Boys</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- AUDIO -->
+
+      <audio
+        id="audio0"
+        src="/music/Elvis Presley - Can't Help Falling in Love (Lyrics).mp3"
+      ></audio>
+
+      <audio
+        id="audio1"
+        src="/music/Paul Anka - Put Your Head on My Shoulder (Lyrics).mp3"
+      ></audio>
+
+      <audio
+        id="audio2"
+        src="/music/Backstreet Boys - Shape of My Heart (Lyrics).mp3"
+      ></audio>
+    </section>
+
+    <!-- QUOTE -->
+
+    <section class="quote-section">
+      <div class="quote-card">
+        <div class="quote-divider"></div>
+
+        <blockquote>
+          “Dan kalau suatu hari semesta sedang berpihak, semoga aku tidak hanya
+          jadi bagian kecil dari ceritamu.”
+        </blockquote>
+
+        <cite>— untuk Alitha Triamini</cite>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <div class="footer-line"></div>
+
+      <div class="footer-wrapper">
+        <p class="footer-text">
+          Made sincerely for
+          <strong>— Alitha Triamini</strong>
+        </p>
+
+        <div class="footer-social">
+          <a
+            href="https://www.instagram.com/_aleethaa/"
+            target="_blank"
+            class="social-icon"
+          >
+            <!-- INSTAGRAM -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+
+              <circle cx="12" cy="12" r="4"></circle>
+
+              <circle cx="17.5" cy="6.5" r="1"></circle>
+            </svg>
+          </a>
+
+          <a
+            href="https://www.tiktok.com/@aalethaaa"
+            target="_blank"
+            class="social-icon"
+          >
+            <!-- TIKTOK -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.68h-3.2v13.73a2.9 2.9 0 1 1-2-2.77V9.69a6.13 6.13 0 1 0 5.2 6.05V9.01a8.05 8.05 0 0 0 4.77 1.56V6.69Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- POPUP -->
+
+    <div class="popup" id="popup">
+      <div class="popup-card">
+        <h3>A Little Message</h3>
+
+        <p>
+          “Taqabbalallahu minna wa minkum taqabbal ya karim, minal aidzin wal
+          faidzin, mohon maaf lahir dan batin dari Mahesa & keluarga. May this
+          day bring warmth, peace, and may Allah bless our lives with joy and
+          prosperity. I wish the universe gives you all the good and genuine
+          things you deserve (dapet dari tiktok kalimatnya, bagus yak). Semoga
+          kamu dan keluargamu selalu diberikan kesehatan, kebahagiaan, serta
+          dilimpahkan banyak hal baik di hari yang penuh berkah ini, aamiin.
+          Happy Eid Al Adha 2026! 🌙”
+        </p>
+
+        <button class="btn-primary" onclick="closePopup()">Close</button>
+      </div>
+    </div>
+
+    <script src="alitha.js"></script>
+  </body>
+</html>
